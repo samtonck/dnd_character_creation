@@ -1,7 +1,7 @@
 
 
 def input_background():
-    print('Шаг 3: Выбор предыстории')
+    print('Шаг 4: Выбор предыстории')
     for number, name in game_class.items():
         print(' {num:^5} |    {name} '.format(num=number, name=name[0]))
     print()

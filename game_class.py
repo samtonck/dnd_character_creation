@@ -1,7 +1,9 @@
+import random as random
+import player
 
 
 def input_class():
-    print('Шаг 2: Выбор класса')
+    print('Шаг 3: Выбор класса')
     for number, name in game_class.items():
         print(' {num:^5} |    {name} '.format(num=number, name=name[0]))
     print()
@@ -14,6 +16,7 @@ def input_class():
     else:
         print('Вы выбрали класс', game_class[user_input_class][0], '\n')
         name_class = game_class[user_input_class][0]
+        player.game_class = name_class
     return name_class
 
 
