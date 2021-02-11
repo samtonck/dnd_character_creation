@@ -91,3 +91,5 @@ hit_dise = ''  # кубик жизни
 dark_vision = ''  # темное зрение
 language = ''  # языки
 other = ''  # другие умения
+skills = ''  # навыки
+equipment = ''  # снаряжение
