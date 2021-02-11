@@ -1,7 +1,9 @@
+import random as random
+import player
 
 
 def input_background():
-    print('Шаг 4: Выбор предыстории')
+    print('Шаг 5: Выбор предыстории')
     for number, name in game_class.items():
         print(' {num:^5} |    {name} '.format(num=number, name=name[0]))
     print()
@@ -14,6 +16,7 @@ def input_background():
     else:
         print('Вы выбрали предысторию', game_class[user_input_background][0], '\n')
         name_background = game_class[user_input_background][0]
+        player.background = name_background
     return name_background
 
 
