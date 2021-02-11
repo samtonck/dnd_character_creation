@@ -1,4 +1,5 @@
 import random as random
+from termcolor import colored
 import player
 
 
@@ -61,19 +62,52 @@ game_class = {
 }
 
 
+def mod_stat(mod_strength, mod_dexterity, mod_constitution,
+             mod_intelligence, mod_wisdom, mod_charisma):
+    player.mod_strength = (player.strength - 10) // 2  # модификатор сила
+    player.mod_dexterity = (player.dexterity - 10) // 2  # модификатор ловкость
+    player.mod_constitution = (player.constitution - 10) // 2  # модификатор телосложение
+    player.mod_intelligence = (player.intelligence - 10) // 2  # модификатор интеллект
+    player.mod_wisdom = (player.wisdom - 10) // 2  # модификатор мудрость
+    player.mod_charisma = (player.charisma - 10) // 2  # модификатор харизма
+    return mod_strength, mod_dexterity, mod_constitution, mod_intelligence, mod_wisdom, mod_charisma
+
+
 def bard():  # Бард
-    player.strength = 8  # сила
-    player.dexterity = 10  # ловкость
-    player.constitution = 12  # телосложение
-    player.intelligence = 15  # интелект
-    player.wisdom = 14  # мудрость
-    player.charisma = 13  # харизма
-    player.skills = """Владение навыками: Проницательность, Религия
+    player.strength += 8  # сила
+    player.dexterity += 14  # ловкость
+    player.constitution += 12  # телосложение
+    player.intelligence += 15  # интелект
+    player.wisdom = +10  # мудрость
+    player.charisma = +13  # харизма
+    print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
+    player.skills = """получите заговоры злая насмешка и пляшущие огоньки вместе со следующими заклинаниями 1 уровня: 
+волна грома, лечащее слово, обнаружение магии и очарование личности.
     """  # навыки
-    player.language += """+2 на ваш выбор
+    mod_stat(player.mod_strength, player.mod_dexterity, player.mod_constitution,
+             player.mod_intelligence, player.mod_wisdom, player.mod_charisma)
+    player.hit_point_maximum = 8 + player.mod_constitution  # максимальное кол-во очков жизни
+    player.hit_dise = '1d8 за каждый уровень барда'  # кубик жизни
+    player.equipment = """
+Доспехи: Лёгкие доспехи
+Оружие: Простое оружие, длинные мечи, короткие мечи, рапиры, ручные арбалеты
+Инструменты: Три музыкальных инструмента на ваш выбор
     """
-    player.equipment += """Снаряжение: Священный символ (подаренный вам в момент принятия священного сана), 
-молитвенник или молитвенный барабан, 5 палочек благовоний, облачение, комплект обычной одежды, поясной кошель с 15 зм
+    player.check_saving_throws_dexterity = True  # спас бросок ловкость
+    player.check_saving_throws_charisma = True  # спас бросок харизма0
+    player.language += """+2 на ваш выбор
+"""
+    player.equipment = """
+Вы начинаете со следующим снаряжением в дополнение к снаряжению, полученному за вашу предысторию:
+
+а) рапира, б) длинный меч или в) любое простое оружие
+а) набор дипломата или б) набор артиста
+а) лютня или б) любой другой музыкальный инструмент
+Кожаный доспех и кинжал
+"""
+    player.equipment += """
+Священный символ (подаренный вам в момент принятия священного сана), молитвенник или молитвенный барабан, 5 палочек 
+благовоний, облачение, комплект обычной одежды, поясной кошель с 15 зм
 """
 
 

@@ -83,9 +83,12 @@ def servant():  # ПРИСЛУЖНИК
 
     player.check_insight = True  # знание проницательность
     player.check_religion = True  # знание религия
-    player.language += '+2 на ваш выбор'
-    player.equipment += """Священный символ (подаренный вам в момент принятия священного сана), молитвенник или 
-молитвенный барабан, 5 палочек благовоний, облачение, комплект обычной одежды, поясной кошель с 15 зм"""
+    player.language += """+2 на ваш выбор
+"""
+    player.equipment += """
+Священный символ (подаренный вам в момент принятия священного сана), молитвенник или молитвенный барабан, 5 палочек 
+благовоний, облачение, комплект обычной одежды, поясной кошель с 15 зм
+"""
 
 
 def charlatan():  # ШАРЛАТАН
@@ -239,12 +242,6 @@ def selection_mechanics(background_personality_traits_list,
                         background_ideals_list,
                         background_bonds_list,
                         background_flaws_list):
-
-    # personality_traits = ''  # черты характера
-    # ideals = ''  # идеалы
-    # bonds = ''  # привязанности
-    # flaws = ''  # слабости
-
     print('Шаг 5.1: Выбор черты характера')
     for number, name in background_personality_traits_list.items():
         print(' {num:^5} |    {name} '.format(num=number, name=name[0]))
@@ -312,3 +309,4 @@ def selection_mechanics(background_personality_traits_list,
         player.flaws = name_background_flaws
 
     return background_personality_traits_list, background_ideals_list, background_bonds_list, background_flaws_list
+

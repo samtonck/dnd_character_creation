@@ -51,6 +51,19 @@ def input_gender():
         return name_gender
 
 
+def input_level():
+    print('Шаг 3: За персонажа какого уровня вы будете играть: ')
+    user_input_level = int(input('Введите номер уровня от 1 до 20: '))
+
+    while 20 < user_input_level < 1:
+        print('Такого уровня нет')
+        user_input_level = int(input("Введите номер уровня от 1 до 20: "))
+    else:
+        print('Вы выбрали уровень', user_input_level, '\n')
+        name_level = user_input_level
+        return name_level
+
+
 name = ''  # имя персонажа
 game_gender = input_gender()  # пол персонажа
 age = ''  # возраст персонажа
@@ -67,9 +80,70 @@ ideals = ''  # идеалы
 bonds = ''  # привязанности
 flaws = ''  # слабости
 
-level = 1  # уровень по умолчанию 1
+level = input_level()  # уровень
 experience_point = 0  # опыт
 proficiency_bonus = 0  # бонус мастерства
+
+if level == 1:
+    experience_point = 0
+    proficiency_bonus = 2
+elif level == 2:
+    experience_point = 300
+    proficiency_bonus = 2
+elif level == 3:
+    experience_point = 900
+    proficiency_bonus = 2
+elif level == 4:
+    experience_point = 2700
+    proficiency_bonus = 2
+elif level == 5:
+    experience_point = 6500
+    proficiency_bonus = 3
+elif level == 6:
+    experience_point = 14000
+    proficiency_bonus = 3
+elif level == 7:
+    experience_point = 23000
+    proficiency_bonus = 3
+elif level == 8:
+    experience_point = 34000
+    proficiency_bonus = 3
+elif level == 9:
+    experience_point = 48000
+    proficiency_bonus = 4
+elif level == 10:
+    experience_point = 64000
+    proficiency_bonus = 4
+elif level == 11:
+    experience_point = 85000
+    proficiency_bonus = 4
+elif level == 12:
+    experience_point = 100000
+    proficiency_bonus = 4
+elif level == 13:
+    experience_point = 120000
+    proficiency_bonus = 5
+elif level == 14:
+    experience_point = 140000
+    proficiency_bonus = 5
+elif level == 15:
+    experience_point = 165000
+    proficiency_bonus = 5
+elif level == 16:
+    experience_point = 195000
+    proficiency_bonus = 5
+elif level == 17:
+    experience_point = 225000
+    proficiency_bonus = 6
+elif level == 18:
+    experience_point = 265000
+    proficiency_bonus = 6
+elif level == 19:
+    experience_point = 305000
+    proficiency_bonus = 6
+elif level == 20:
+    experience_point = 355000
+    proficiency_bonus = 6
 
 strength = 0  # сила
 dexterity = 0  # ловкость
@@ -78,12 +152,12 @@ intelligence = 0  # интеллект
 wisdom = 0  # мудрость
 charisma = 0  # харизма
 
-mod_strength = (strength - 10) // 2  # модификатор сила
-mod_dexterity = (dexterity - 10) // 2  # модификатор ловкость
-mod_constitution = (constitution - 10) // 2  # модификатор телосложение
-mod_intelligence = (intelligence - 10) // 2  # модификатор интеллект
-mod_wisdom = (wisdom - 10) // 2  # модификатор мудрость
-mod_charisma = (charisma - 10) // 2  # модификатор харизма
+mod_strength = 0  # модификатор сила
+mod_dexterity = 0  # модификатор ловкость
+mod_constitution = 0  # модификатор телосложение
+mod_intelligence = 0  # модификатор интеллект
+mod_wisdom = 0  # модификатор мудрость
+mod_charisma = 0  # модификатор харизма
 
 saving_throws_strength = 0  # спас бросок сила
 saving_throws_dexterity = 0  # спас бросок ловкость

@@ -13,11 +13,6 @@ result_race = game_race.input_race()
 result_class = game_class.input_class()
 result_background = game_background.input_background()
 
-# personality_traits = ''  # черты характера
-# ideals = ''  # идеалы
-# bonds = ''  # привязанности
-# flaws = ''  # слабости
-
 
 print(colored('Итого:', color='cyan'))
 
@@ -42,6 +37,7 @@ print(colored('слабости', color='cyan'), '=', colored(player.flaws, colo
 line()
 print(colored('уровень', color='cyan'), '=', colored(player.level, color='yellow'))
 print(colored('опыт', color='cyan'), '=', colored(player.experience_point, color='yellow'))
+print(colored('бонус мастерства', color='cyan'), '=', colored(player.proficiency_bonus, color='yellow'))
 line()
 print(colored('сила', color='cyan'), '=', colored(player.strength, color='yellow'))
 print(colored('ловкость', color='cyan'), '=', colored(player.dexterity, color='yellow'))
@@ -49,8 +45,6 @@ print(colored('телосложение', color='cyan'), '=', colored(player.con
 print(colored('интеллект', color='cyan'), '=', colored(player.intelligence, color='yellow'))
 print(colored('мудрость', color='cyan'), '=', colored(player.wisdom, color='yellow'))
 print(colored('харизма', color='cyan'), '=', colored(player.charisma, color='yellow'))
-line()
-print(colored('бонус мастерства', color='cyan'), '=', colored(player.proficiency_bonus, color='yellow'))
 line()
 print(colored('модификатор сила', color='cyan'), '=', colored(player.mod_strength, color='yellow'))
 print(colored('модификатор ловкость', color='cyan'), '=', colored(player.mod_dexterity, color='yellow'))
@@ -91,6 +85,25 @@ print(colored('религия', color='cyan'), '=', colored(player.religion, col
 print(colored('скрытность', color='cyan'), '=', colored(player.stealth, color='yellow'))
 print(colored('убеждение', color='cyan'), '=', colored(player.persuasion, color='yellow'))
 print(colored('уход за животными', color='cyan'), '=', colored(player.animal_handling, color='yellow'))
+line()
+print(colored('знание акробатика', color='cyan'), '=', colored(player.check_acrobatics, color='yellow'))
+print(colored('знание анализ', color='cyan'), '=', colored(player.check_perception, color='yellow'))
+print(colored('знание атлетика', color='cyan'), '=', colored(player.check_athletics, color='yellow'))
+print(colored('знание внимательность', color='cyan'), '=', colored(player.check_investigation, color='yellow'))
+print(colored('знание выживание', color='cyan'), '=', colored(player.check_survival, color='yellow'))
+print(colored('знание выступление', color='cyan'), '=', colored(player.check_performance, color='yellow'))
+print(colored('знание запугивание', color='cyan'), '=', colored(player.check_intimidation, color='yellow'))
+print(colored('знание история', color='cyan'), '=', colored(player.check_history, color='yellow'))
+print(colored('знание ловкость рук', color='cyan'), '=', colored(player.check_sleight_of_hand, color='yellow'))
+print(colored('знание магия', color='cyan'), '=', colored(player.check_arcana, color='yellow'))
+print(colored('знание медицина', color='cyan'), '=', colored(player.check_medicine, color='yellow'))
+print(colored('знание обман', color='cyan'), '=', colored(player.check_deception, color='yellow'))
+print(colored('знание природа', color='cyan'), '=', colored(player.check_nature, color='yellow'))
+print(colored('знание проницательность', color='cyan'), '=', colored(player.check_insight, color='yellow'))
+print(colored('знание религия', color='cyan'), '=', colored(player.check_religion, color='yellow'))
+print(colored('знание скрытность', color='cyan'), '=', colored(player.check_stealth, color='yellow'))
+print(colored('знание убеждение', color='cyan'), '=', colored(player.check_persuasion, color='yellow'))
+print(colored('знание уход за животными', color='cyan'), '=', colored(player.check_animal_handling, color='yellow'))
 line()
 print(colored('пассивная мудрость (внимательность)', color='cyan'), '=', colored(player.passive_wisdom, color='yellow'))
 line()
