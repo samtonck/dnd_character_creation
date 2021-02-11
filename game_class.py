@@ -18,25 +18,30 @@ def input_class():
         name_class = game_class[user_input_class][0]
         player.game_class = name_class
 
-        if user_input_class == 1:  # ПРИСЛУЖНИК
-            player.strength = 8  # сила
-            player.dexterity = 10  # ловкость
-            player.constitution = 12  # телосложение
-            player.intelligence = 15  # интелект
-            player.wisdom = 14  # мудрость
-            player.charisma = 13  # харизма
-            player.skills = 'Владение навыками: Проницательность, Религия'  # навыки
-            player.language += '+2 на ваш выбор'
-            player.equipment += """Снаряжение: Священный символ (подаренный вам в момент принятия священного сана), 
-молитвенник или молитвенный барабан, 5 палочек благовоний, облачение, комплект обычной одежды, поясной кошель с 15 зм"""
-        elif user_input_class == 2:
-            pass
-        elif user_input_class == 3:  #
-            pass
-        elif user_input_class == 4:  #
-            pass
-        elif user_input_class == 5:  #
-            pass
+        if user_input_class == 1:  # Бард
+            bard()
+        elif user_input_class == 2:  # Варвар
+            barbarian()
+        elif user_input_class == 3:  # Воин
+            fighter()
+        elif user_input_class == 4:  # Волшебник
+            wizard()
+        elif user_input_class == 5:  # Друид
+            druid()
+        elif user_input_class == 6:  # Жрец
+            cleric()
+        elif user_input_class == 7:  # Колдун
+            warlock()
+        elif user_input_class == 8:  # Монах
+            monk()
+        elif user_input_class == 9:  # Паладин
+            paladin()
+        elif user_input_class == 10:  # Плут
+            rogue()
+        elif user_input_class == 11:  # Следопыт
+            ranger()
+        elif user_input_class == 12:  # Чародей
+            sorcerer()
     return name_class
 
 
@@ -51,6 +56,67 @@ game_class = {
     8: ['Монах (Monk)'],
     9: ['Паладин (Paladin)'],
     10: ['Плут (Rogue)'],
-    12: ['Следопыт (Ranger)'],
-    13: ['Чародей (Sorcerer)']
+    11: ['Следопыт (Ranger)'],
+    12: ['Чародей (Sorcerer)']
 }
+
+
+def bard():  # Бард
+    player.strength = 8  # сила
+    player.dexterity = 10  # ловкость
+    player.constitution = 12  # телосложение
+    player.intelligence = 15  # интелект
+    player.wisdom = 14  # мудрость
+    player.charisma = 13  # харизма
+    player.skills = """Владение навыками: Проницательность, Религия
+    """  # навыки
+    player.language += """+2 на ваш выбор
+    """
+    player.equipment += """Снаряжение: Священный символ (подаренный вам в момент принятия священного сана), 
+молитвенник или молитвенный барабан, 5 палочек благовоний, облачение, комплект обычной одежды, поясной кошель с 15 зм
+"""
+
+
+def barbarian():  # Варвар
+    pass
+
+
+def fighter():  # Воин
+    pass
+
+
+def wizard():  # Волшебник
+    pass
+
+
+def druid():  # Друид
+    pass
+
+
+def cleric():  # Жрец
+    pass
+
+
+def warlock():  # Колдун
+    pass
+
+
+def monk():  # Монах
+    pass
+
+
+def paladin():  # Паладин
+    pass
+
+
+def rogue():  # Плут
+    pass
+
+
+def ranger():  # Следопыт
+    pass
+
+
+def sorcerer():  # Чародей
+    pass
+

@@ -13,6 +13,11 @@ result_race = game_race.input_race()
 result_class = game_class.input_class()
 result_background = game_background.input_background()
 
+# personality_traits = ''  # черты характера
+# ideals = ''  # идеалы
+# bonds = ''  # привязанности
+# flaws = ''  # слабости
+
 
 print(colored('Итого:', color='cyan'))
 
