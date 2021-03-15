@@ -159,13 +159,6 @@ mod_intelligence = 0  # модификатор интеллект
 mod_wisdom = 0  # модификатор мудрость
 mod_charisma = 0  # модификатор харизма
 
-saving_throws_strength = 0  # спас бросок сила
-saving_throws_dexterity = 0  # спас бросок ловкость
-saving_throws_constitution = 0  # спас бросок телосложение
-saving_throws_intelligence = 0  # спас бросок интеллект
-saving_throws_wisdom = 0  # спас бросок мудрость
-saving_throws_charisma = 0  # спас бросок харизма
-
 check_saving_throws_strength = False  # знание спас бросок сила
 check_saving_throws_dexterity = False  # знание  спас бросок ловкость
 check_saving_throws_constitution = False  # знание  спас бросок телосложение
@@ -173,37 +166,12 @@ check_saving_throws_intelligence = False  # знание  спас бросок 
 check_saving_throws_wisdom = False  # знание  спас бросок мудрость
 check_saving_throws_charisma = False  # знание  спас бросок харизма
 
-if check_saving_throws_strength is True:
-    saving_throws_strength += proficiency_bonus
-if check_saving_throws_dexterity is True:
-    saving_throws_dexterity += proficiency_bonus
-if check_saving_throws_constitution is True:
-    saving_throws_constitution += proficiency_bonus
-if check_saving_throws_intelligence is True:
-    saving_throws_intelligence += proficiency_bonus
-if check_saving_throws_wisdom is True:
-    saving_throws_wisdom += proficiency_bonus
-if check_saving_throws_charisma is True:
-    saving_throws_charisma += proficiency_bonus
-
-acrobatics = 0  # акробатика
-perception = 0  # анализ
-athletics = 0  # атлетика
-investigation = 0  # внимательность
-survival = 0  # выживание
-performance = 0  # выступление
-intimidation = 0  # запугивание
-history = 0  # история
-sleight_of_hand = 0  # ловкость рук
-arcana = 0  # магия
-medicine = 0  # медицина
-deception = 0  # обман
-nature = 0  # природа
-insight = 0  # проницательность
-religion = 0  # религия
-stealth = 0  # скрытность
-persuasion = 0  # убеждение
-animal_handling = 0  # уход за животными
+saving_throws_strength = mod_strength  # спас бросок сила
+saving_throws_dexterity = mod_dexterity  # спас бросок ловкость
+saving_throws_constitution = mod_constitution  # спас бросок телосложение
+saving_throws_intelligence = mod_intelligence  # спас бросок интеллект
+saving_throws_wisdom = mod_wisdom  # спас бросок мудрость
+saving_throws_charisma = mod_charisma  # спас бросок харизма
 
 check_acrobatics = False  # знание акробатика
 check_perception = False  # знание анализ
@@ -224,42 +192,24 @@ check_stealth = False  # знание скрытность
 check_persuasion = False  # знание убеждение
 check_animal_handling = False  # знание уход за животными
 
-if check_acrobatics is True:
-    acrobatics += proficiency_bonus
-if check_perception is True:
-    perception += proficiency_bonus
-if check_athletics is True:
-    athletics += proficiency_bonus
-if check_investigation is True:
-    investigation += proficiency_bonus
-if check_survival is True:
-    survival += proficiency_bonus
-if check_performance is True:
-    performance += proficiency_bonus
-if check_intimidation is True:
-    intimidation += proficiency_bonus
-if check_history is True:
-    history += proficiency_bonus
-if check_sleight_of_hand is True:
-    sleight_of_hand += proficiency_bonus
-if check_arcana is True:
-    arcana += proficiency_bonus
-if check_medicine is True:
-    medicine += proficiency_bonus
-if check_deception is True:
-    deception += proficiency_bonus
-if check_nature is True:
-    nature += proficiency_bonus
-if check_insight is True:
-    insight += proficiency_bonus
-if check_religion is True:
-    religion += proficiency_bonus
-if check_stealth is True:
-    stealth += proficiency_bonus
-if check_persuasion is True:
-    persuasion += proficiency_bonus
-if check_animal_handling is True:
-    animal_handling += proficiency_bonus
+acrobatics = mod_dexterity  # акробатика
+perception = mod_intelligence  # анализ
+athletics = mod_strength  # атлетика
+investigation = mod_wisdom  # внимательность
+survival = mod_wisdom  # выживание
+performance = mod_charisma  # выступление
+intimidation = mod_charisma  # запугивание
+history = mod_intelligence  # история
+sleight_of_hand = mod_dexterity  # ловкость рук
+arcana = mod_intelligence  # магия
+medicine = mod_wisdom  # медицина
+deception = mod_charisma  # обман
+nature = mod_intelligence  # природа
+insight = mod_wisdom  # проницательность
+religion = mod_intelligence  # религия
+stealth = mod_dexterity  # скрытность
+persuasion = mod_charisma  # убеждение
+animal_handling = mod_wisdom  # уход за животными
 
 passive_wisdom = 10 + mod_wisdom  # пассивная мудрость (внимательность)
 

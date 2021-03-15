@@ -114,9 +114,6 @@ def rock_gnome():
     player.weight = random.randrange(15, 20)
     player.speed = 25
     player.dark_vision = 60
-    player.check_saving_throws_strength = False  # спас бросок сила
-    player.check_saving_throws_dexterity = False  # спас бросок ловкость
-    player.check_saving_throws_constitution = False  # спас бросок телосложение
     player.check_saving_throws_intelligence = True  # спас бросок интелект
     player.check_saving_throws_wisdom = True  # спас бросок мудрость
     player.check_saving_throws_charisma = True  # спас бросок харизма
