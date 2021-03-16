@@ -220,9 +220,15 @@ print(colored('скрытность', color='cyan'), '=', colored(player.stealth
 print(colored('убеждение', color='cyan'), '=', colored(player.persuasion, color='yellow'))
 print(colored('уход за животными', color='cyan'), '=', colored(player.animal_handling, color='yellow'))
 line()
+
+player.passive_wisdom = 10 + player.mod_wisdom
 print(colored('пассивная мудрость (внимательность)', color='cyan'), '=', colored(player.passive_wisdom, color='yellow'))
 line()
+
+player.armor_class = 10 + player.mod_dexterity
 print(colored('КД (класс доспеха)', color='cyan'), '=', colored(player.armor_class, color='yellow'))
+
+player.initiative = player.mod_dexterity
 print(colored('инициатива', color='cyan'), '=', colored(player.initiative, color='yellow'))
 print(colored('скорость', color='cyan'), '=', colored(player.speed, color='yellow'))
 line()
