@@ -77,6 +77,8 @@ print(colored('класс', color='cyan'), '=', colored(player.game_class, color
 print(colored('предыстория', color='cyan'), '=', colored(player.background, color='yellow'))
 print(colored('мировоззрение', color='cyan'), '=', colored(player.alignment, color='yellow'))
 line()
+print(colored('призвание/гильдия/судьбоносное происшествие', color='cyan'), '=', colored(player.like_mechanics,
+                                                                                         color='yellow'))
 print(colored('черты характера', color='cyan'), '=', colored(player.personality_traits, color='yellow'))
 print(colored('идеалы', color='cyan'), '=', colored(player.ideals, color='yellow'))
 print(colored('привязанности', color='cyan'), '=', colored(player.bonds, color='yellow'))

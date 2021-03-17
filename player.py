@@ -75,6 +75,7 @@ game_class = ''  # класс
 background = ''  # предыстория
 alignment = ''  # мировоззрение
 
+like_mechanics = ''  # призвание/гильдия/судьбоносное происшествие
 personality_traits = ''  # черты характера
 ideals = ''  # идеалы
 bonds = ''  # привязанности
