@@ -72,7 +72,7 @@ def bard():  # Бард
     print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
     player.skills = """получите заговоры злая насмешка и пляшущие огоньки вместе со следующими заклинаниями 1 уровня: 
 волна грома, лечащее слово, обнаружение магии и очарование личности.
-    """  # навыки
+"""  # навыки
     player.hit_point_maximum += 8 + player.mod_constitution  # максимальное кол-во очков жизни
     player.hit_dise = '1d8 за каждый уровень барда'  # кубик жизни
     player.check_saving_throws_dexterity = True  # спас бросок ловкость
@@ -96,45 +96,220 @@ def bard():  # Бард
 
 
 def barbarian():  # Варвар
-    pass
+    player.strength += 0  # сила
+    player.dexterity += 0  # ловкость
+    player.constitution += 0  # телосложение
+    player.intelligence += 0  # интелект
+    player.wisdom += 0  # мудрость
+    player.charisma += 0  # харизма
+    # print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
+    player.skills = """
+"""  # навыки
+    player.hit_point_maximum += 8 + player.mod_constitution  # максимальное кол-во очков жизни
+    player.hit_dise = ''  # кубик жизни
+    player. = True  # спас бросок
+    player. = True  # спас бросок
+    player.language += """
+"""
+    player.equipment = """
+"""
 
 
 def fighter():  # Воин
-    pass
+    player.strength += 0  # сила
+    player.dexterity += 0  # ловкость
+    player.constitution += 0  # телосложение
+    player.intelligence += 0  # интелект
+    player.wisdom += 0  # мудрость
+    player.charisma += 0  # харизма
+    # print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
+    player.skills = """
+"""  # навыки
+    player.hit_point_maximum += 8 + player.mod_constitution  # максимальное кол-во очков жизни
+    player.hit_dise = ''  # кубик жизни
+    player. = True  # спас бросок
+    player. = True  # спас бросок
+    player.language += """
+"""
+    player.equipment = """
+"""
 
 
 def wizard():  # Волшебник
-    pass
+    player.strength += 0  # сила
+    player.dexterity += 0  # ловкость
+    player.constitution += 0  # телосложение
+    player.intelligence += 0  # интелект
+    player.wisdom += 0  # мудрость
+    player.charisma += 0  # харизма
+    # print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
+    player.skills = """
+"""  # навыки
+    player.hit_point_maximum += 8 + player.mod_constitution  # максимальное кол-во очков жизни
+    player.hit_dise = ''  # кубик жизни
+    player. = True  # спас бросок
+    player. = True  # спас бросок
+    player.language += """
+"""
+    player.equipment = """
+"""
 
 
 def druid():  # Друид
-    pass
+    player.strength += 0  # сила
+    player.dexterity += 0  # ловкость
+    player.constitution += 0  # телосложение
+    player.intelligence += 0  # интелект
+    player.wisdom += 0  # мудрость
+    player.charisma += 0  # харизма
+    # print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
+    player.skills = """
+"""  # навыки
+    player.hit_point_maximum += 8 + player.mod_constitution  # максимальное кол-во очков жизни
+    player.hit_dise = ''  # кубик жизни
+    player. = True  # спас бросок
+    player. = True  # спас бросок
+    player.language += """
+"""
+    player.equipment = """
+"""
 
 
 def cleric():  # Жрец
-    pass
+    player.strength += 0  # сила
+    player.dexterity += 0  # ловкость
+    player.constitution += 0  # телосложение
+    player.intelligence += 0  # интелект
+    player.wisdom += 0  # мудрость
+    player.charisma += 0  # харизма
+    # print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
+    player.skills = """
+"""  # навыки
+    player.hit_point_maximum += 8 + player.mod_constitution  # максимальное кол-во очков жизни
+    player.hit_dise = ''  # кубик жизни
+    player. = True  # спас бросок
+    player. = True  # спас бросок
+    player.language += """
+"""
+    player.equipment = """
+"""
 
 
 def warlock():  # Колдун
-    pass
+    player.strength += 0  # сила
+    player.dexterity += 0  # ловкость
+    player.constitution += 0  # телосложение
+    player.intelligence += 0  # интелект
+    player.wisdom += 0  # мудрость
+    player.charisma += 0  # харизма
+    # print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
+    player.skills = """
+"""  # навыки
+    player.hit_point_maximum += 8 + player.mod_constitution  # максимальное кол-во очков жизни
+    player.hit_dise = ''  # кубик жизни
+    player. = True  # спас бросок
+    player. = True  # спас бросок
+    player.language += """
+"""
+    player.equipment = """
+"""
 
 
 def monk():  # Монах
-    pass
+    player.strength += 0  # сила
+    player.dexterity += 0  # ловкость
+    player.constitution += 0  # телосложение
+    player.intelligence += 0  # интелект
+    player.wisdom += 0  # мудрость
+    player.charisma += 0  # харизма
+    # print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
+    player.skills = """
+"""  # навыки
+    player.hit_point_maximum += 8 + player.mod_constitution  # максимальное кол-во очков жизни
+    player.hit_dise = ''  # кубик жизни
+    player. = True  # спас бросок
+    player. = True  # спас бросок
+    player.language += """
+"""
+    player.equipment = """
+"""
 
 
 def paladin():  # Паладин
-    pass
+    player.strength += 0  # сила
+    player.dexterity += 0  # ловкость
+    player.constitution += 0  # телосложение
+    player.intelligence += 0  # интелект
+    player.wisdom += 0  # мудрость
+    player.charisma += 0  # харизма
+    # print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
+    player.skills = """
+"""  # навыки
+    player.hit_point_maximum += 8 + player.mod_constitution  # максимальное кол-во очков жизни
+    player.hit_dise = ''  # кубик жизни
+    player. = True  # спас бросок
+    player. = True  # спас бросок
+    player.language += """
+"""
+    player.equipment = """
+"""
 
 
 def rogue():  # Плут
-    pass
+    player.strength += 0  # сила
+    player.dexterity += 0  # ловкость
+    player.constitution += 0  # телосложение
+    player.intelligence += 0  # интелект
+    player.wisdom += 0  # мудрость
+    player.charisma += 0  # харизма
+    # print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
+    player.skills = """
+"""  # навыки
+    player.hit_point_maximum += 8 + player.mod_constitution  # максимальное кол-во очков жизни
+    player.hit_dise = ''  # кубик жизни
+    player. = True  # спас бросок
+    player. = True  # спас бросок
+    player.language += """
+"""
+    player.equipment = """
+"""
 
 
 def ranger():  # Следопыт
-    pass
+    player.strength += 0  # сила
+    player.dexterity += 0  # ловкость
+    player.constitution += 0  # телосложение
+    player.intelligence += 0  # интелект
+    player.wisdom += 0  # мудрость
+    player.charisma += 0  # харизма
+    # print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
+    player.skills = """
+"""  # навыки
+    player.hit_point_maximum += 8 + player.mod_constitution  # максимальное кол-во очков жизни
+    player.hit_dise = ''  # кубик жизни
+    player. = True  # спас бросок
+    player. = True  # спас бросок
+    player.language += """
+"""
+    player.equipment = """
+"""
 
 
 def sorcerer():  # Чародей
-    pass
-
+    player.strength += 0  # сила
+    player.dexterity += 0  # ловкость
+    player.constitution += 0  # телосложение
+    player.intelligence += 0  # интелект
+    player.wisdom += 0  # мудрость
+    player.charisma += 0  # харизма
+    # print(colored('Необходимо выбрать предысторию АРТИСТ', color='cyan'))
+    player.skills = """
+"""  # навыки
+    player.hit_point_maximum += 8 + player.mod_constitution  # максимальное кол-во очков жизни
+    player.hit_dise = ''  # кубик жизни
+    player. = True  # спас бросок
+    player. = True  # спас бросок
+    player.language += """
+"""
+    player.equipment = """
+"""
