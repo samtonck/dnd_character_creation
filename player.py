@@ -54,8 +54,9 @@ def input_gender():
 def input_level():
     print('Шаг 3: За персонажа какого уровня вы будете играть: ')
     user_input_level = int(input('Введите номер уровня от 1 до 20: '))
+    lvl = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
 
-    while 20 < user_input_level < 1:
+    while user_input_level not in lvl:
         print('Такого уровня нет')
         user_input_level = int(input("Введите номер уровня от 1 до 20: "))
     else:
